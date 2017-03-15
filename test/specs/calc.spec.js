@@ -15,9 +15,9 @@
         });
         it('should handle one argument', function(){
           let result = window.calc.sum(22);
-          expect(result).to.be.a('number');
-          expect(result).to.equal(22);
+          expect(result).to.be.undefined;
         });
+        // it('should handle ')
       });
     });
 
