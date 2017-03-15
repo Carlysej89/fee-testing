@@ -15,6 +15,13 @@
             return total;
         }
 
+        // if the thing passed in is NOT an array,
+        // I need to give back undefined
+        if (!Array.isArray(numbers)) {
+          return undefined;
+        }
+
+
         numbers.forEach(function addThem(num) {
             total = total + num;
         });
