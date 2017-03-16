@@ -8,19 +8,16 @@
      * @param  {Array} numbers  The numbers to add together
      * @return {Number}         The total of all numbers
      */
-    window.calc.sum = function sum(numbers) {
+    window.calc.sum = function sum(numbers = []) {
         let total = 0;
 
         if (!numbers) {
-            return total;
+            return NaN;
         }
 
-        // if the thing passed in is NOT an array,
-        // I need to give back undefined
         if (!Array.isArray(numbers)) {
           return undefined;
         }
-
 
         numbers.forEach(function addThem(num) {
             total = total + num;
