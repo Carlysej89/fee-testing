@@ -1,12 +1,12 @@
 (function() {
-    'use strict';
+  'use strict';
 
 
-    let expect = window.chai.expect;
-    describe('test run', function () {
-      it('should be true', function (){
-        expect(true).to.be.true;
-      });
+  let expect = window.chai.expect;
+  describe('test run', function () {
+    it('should be true', function (){
+      expect(true).to.be.true;
+    });
     describe('math module', function(){
       describe('test the sum function', function(){
         it('should given two numbers add them together', function() {
